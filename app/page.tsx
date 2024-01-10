@@ -1,8 +1,13 @@
+
+import { Box, Button, CssBaseline } from '@mui/material'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <Box>
+      <CssBaseline/>
+      <Button variant="contained" color="success">click me</Button>
+    </Box>
   )
 }
 

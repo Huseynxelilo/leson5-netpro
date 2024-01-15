@@ -9,6 +9,15 @@ const theme = createTheme({
            }, 
           },  
         },
+       MuiLink:{
+        styleOverrides:{
+          root:{
+            textDecoration: 'none',
+            display: "flex",
+            alignItems: "center",
+          }
+        }
+       }
     },
 });
 

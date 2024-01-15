@@ -1,6 +1,6 @@
 "use client"
 import React, { ReactNode } from 'react'
-import { ThemeProvider } from "@mui/material"
+import { CssBaseline, ThemeProvider } from "@mui/material"
 import theme from './theme'
 
 interface IProps {
@@ -9,7 +9,10 @@ interface IProps {
 
 const ThemeClient = ({children}:IProps) => {
   return (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  <ThemeProvider theme={theme}>
+    <CssBaseline/>
+    {children}
+    </ThemeProvider>
   )
 }
 
